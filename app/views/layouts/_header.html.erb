@@ -1,7 +1,7 @@
 	<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
 		<!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="container">
-	    	<%= link_to "iGrocery app", '#', id: "logo" %>
+	    	<%= link_to "iGrocery app", root_path, id: "logo" %>
 	        <div class="navbar-header">
 	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
 	                <span class="icon-bar"></span>
@@ -12,8 +12,8 @@
 	        <!-- Collect the nav links, forms, and other content for toggling -->
 	        <div class="collapse navbar-collapse" id="navbarCollapse">
 	            <ul class="nav navbar-nav navbar-right">
-	                <li class="active"><%= link_to "Home", '#' %></li>
-	                <li><%= link_to "Help", '#' %></a></li>
+	                <li class="active"><%= link_to "Home", root_path %></li>
+	                <li><%= link_to "Help", help_path %></a></li>
 	                <li><%= link_to "Log in", '#' %></li>
 	            </ul>
 	        </div>

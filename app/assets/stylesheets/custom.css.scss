@@ -1,6 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* global variables */
+
+$gray-medium-light: #eaeaea;
+
 /* universal */
 
 html {
@@ -46,7 +50,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: $gray-light;;
 }
 
 p {
@@ -75,10 +79,10 @@ p {
 
 footer {
   margin-top: 45px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid $gray-medium-light;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
+  border-top: 1px solid $gray-medium-light;
+  color: $gray-light;;
 }
 
 footer a:hover {
