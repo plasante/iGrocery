@@ -1,11 +1,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* global variables */
+/* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
 
 /* universal */
+
+@mixin box_sizing {
+  -moz-box-sizing:   border-box;
+  -webkit-box-sizin: border-box;
+  box-sizing:        border-box;
+}
 
 html {
   overflow-y: scroll;
@@ -101,4 +107,14 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+
+/* misscellaneous */
+
+.debug_dump {
+  clear: both;
+  float:left;
+  widht: 100%;
+  margin-top: 45px;
+  @include box_sizing;
 }
