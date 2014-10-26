@@ -10,7 +10,11 @@ class ApplicationController < ActionController::Base
       session[:locale] = I18n.locale = :en
     else
       if not params[:locale].nil?
-        session[:locale] = I18n.locale = params[:locale]
+        if params[:locale] == "en" || params[:locale] == "fr"
+          session[:locale] = I18n.locale = params[:locale]
+        else
+          session[:locale] = I18n.locale = :en
+        end
       else
         I18n.locale = session[:locale]
       end
