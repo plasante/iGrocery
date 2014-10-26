@@ -1,13 +1,12 @@
 <footer class="footer">
 	<small>
-		The <%= link_to "iGrocery app", root_path %> is 
-		proudly built with Ruby on Rails, PostgreSQL, Aptana Studio,
-		jQuery, Bootstrap, HTML5, CSS, and powered by Heroku.
+		<%= link_to "iGrocery app", root_path %>
+		<%= t('is_proudly_built') %>
 	</small>
 	<nav>
 		<ul>
-			<li><%= link_to "About",   about_path %></li>
-			<li><%= link_to "Contact", contact_path %></li>
+			<li><%= link_to t('about'),   about_path %></li>
+			<li><%= link_to t('contact'), contact_path %></li>
 		</ul>
 	</nav>
 </footer>

@@ -2,9 +2,9 @@
 	<h1>iGrocery</h1>
 	
 	<h2>
-		This is the home page for the
-		<a href="http://igrocery2.herokuapp.com">iGrocery</a>
-		money saving application.
+		<%= t('this_is_the_home_page') %>
+		<%= link_to 'iGrocery', root_path %>
+		<%= t('money_saving_application') %>
 	</h2>
 	
 	<%= link_to t(:sign_up_now) + "!", signup_path, class: "btn btn-lg btn-primary" %>

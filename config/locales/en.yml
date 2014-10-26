@@ -21,4 +21,20 @@
 
 en:
   hello: "Hello world"
+  this_is_the_home_page: "This is the home page for the"
   sign_up_now: "Sign up now"
+  money_saving_application: "money saving application."
+  home: "Home"
+  help: "Help"
+  log_in: "Login"
+  is_proudly_built: "is proudly built with Ruby on Rails, PostgreSQL, Aptana Studio, jQuery, Bootstrap, HTML5, CSS, and powered by Heroku."
+  about: "About"
+  contact: "Contact"
+
+  about_p: "The iGrocery application is designed to make you save money when doing your grocery!"
+  get_help_at: "Get Help at"
+
+  contact_uniksoft: "Contact the Uniksoft company about the iGrocery app at"
+  
+  signup: "Sign up"
+  signup_p: "This will be a signup page for new users."
