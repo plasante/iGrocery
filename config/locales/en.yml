@@ -36,5 +36,14 @@ en:
 
   contact_uniksoft: "Contact the Uniksoft company about the iGrocery app at"
   
+  # _error_message.html.erb
+  the_form_contains: "The form contains"
+  error_count: "error"
+  
+  # Signup page
   signup: "Sign up"
-  signup_p: "This will be a signup page for new users."
+  name: "Name"
+  email: "Email"
+  password: "Password"
+  password_confirmation: "Password Confirmation"
+  create_my_account: "Create my account"

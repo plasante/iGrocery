@@ -1,3 +1,24 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
 fr:
   hello: "Bonjour le monde"
   this_is_the_home_page: "Ceci est la page d'acceuil de"
@@ -15,6 +36,35 @@ fr:
   
   contact_uniksoft: "Contacter la compagnie Uniksoft à"
   
-  signup: "Enregistrez vous"
-  signup_p: "Ceci sera une page d'enregistrement pour les nouveaux usagers."
+  # _error_message.html.erb
+  the_form_contains: "La forme contient"
+  error_count: "erreur"
   
+  # page d'enregistrement
+  signup: "Enregistrez vous"
+  name: "Nom"
+  email: "Courriel"
+  password: "Mot de passe"
+  password_confirmation: "Confirmez mot de passe"
+  create_my_account: "Creez un compte"
+  
+  activerecord:
+    attributes:
+      user:
+        name: "Nom"
+        email: "Courriel"
+        password: "Mot de passe"
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "doit être rempli(e)"
+            email:
+              blank: "doit être rempli(e)"
+              invalid: "n'est pas valide"
+            password:
+              blank: "doit être rempli(e)"
+              too_short:
+                one: est trop court (au moins un caractère)
+                other: est trop court (au moins %{count} caractères)
