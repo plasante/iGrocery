@@ -34,7 +34,7 @@ fr:
   about_p: "L'application iGrocery vous fait économiser beaucoup d'argent lors de votre épicerie."
   get_help_at: "Obtener de l'aide à"
   
-  contact_uniksoft: "Contacter la compagnie Uniksoft à"
+  contact_uniksoft: "Contacter la compagnie iGrocery à"
   
   # _error_message.html.erb
   the_form_contains: "La forme contient"
@@ -47,6 +47,10 @@ fr:
   password: "Mot de passe"
   password_confirmation: "Confirmez mot de passe"
   create_my_account: "Creez un compte"
+  
+  # users_controller
+  welcome_app: "Bienvenue à iGrocery"
+  max_users_reached: "Le nombre maximum d'utilisateurs a été atteint."
   
   activerecord:
     attributes:

@@ -8,11 +8,17 @@ class UsersController < ApplicationController
   end
   
   def create
-    @user = User.new(user_params)
-    if @user.save
-      redirect_to @user
+    if User.count <= 50
+      @user = User.new(user_params)
+      if @user.save
+        flash[:success] = I18n.t("welcome_app")
+        redirect_to @user
+      else
+        render 'new'
+      end
     else
-      render 'new'
+        flash[:message] = I18n.t("max_users_reached")
+        redirect_to root_path
     end
   end
   
